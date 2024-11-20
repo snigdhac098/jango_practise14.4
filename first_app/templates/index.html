@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<h1>This is a Model page</h1>
+{% if data %}
+
+{% for st in data %}
+
+{{st}}
+
+{% endfor %}
+
+{% else %}
+<h2> No data</h2>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
